@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fefefe;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: repeat(6, 50px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.letter {
+  background-color: #ddd;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.letter.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 16px;
+  font-size: 1rem;
+}
+
+#wordList {
+  list-style: none;
+  padding: 0;
+}
