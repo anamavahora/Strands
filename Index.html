@@ -3,22 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Strands Game</title>
+  <title>Strands Puzzle</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🔠 Strands Game</h1>
-  <div id="gameBoard"></div>
-  <div id="controls">
-    <p>Selected: <span id="selectedWord"></span></p>
-    <button id="submitWord">Submit</button>
-    <button id="shuffleBoard">Shuffle</button>
-    <button id="clearWord">Clear</button>
-  </div>
-  <div id="foundWords">
-    <h2>✅ Found Words</h2>
-    <ul id="wordList"></ul>
-  </div>
+  <header>
+    <h1>🧠 Strands Puzzle</h1>
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </header>
+
+  <main>
+    <div id="gameBoard"></div>
+    
+    <div id="controls">
+      <p>Selected: <span id="selectedWord"></span></p>
+      <button id="submitWord">Submit</button>
+      <button id="shuffleBoard">Shuffle</button>
+      <button id="clearWord">Clear</button>
+      <button id="hintButton">Hint</button>
+    </div>
+
+    <section id="infoPanel">
+      <div>
+        <h2>✅ Found Words</h2>
+        <ul id="wordList"></ul>
+      </div>
+      <div>
+        <h2>🌟 Spangram</h2>
+        <p id="spangramStatus">Not found</p>
+      </div>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
